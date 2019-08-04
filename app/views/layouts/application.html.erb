@@ -1,15 +1,232 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>AppleCrud</title>
+    <title>As</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+    <div class="navbar">
+      <div class="link">
+        <a href=""><i class="fab fa-apple"></i></a>
+        <a href="">Mac</a>
+        <a href="">iPad</a>
+        <a href="">iPhone</a>
+        <a href="">Watch</a>
+        <a href="">TV</a>
+        <a href="">Music</a>
+        <a href="">Assistance</a>
+        <a href=""><i class="fas fa-search"></i></a>
+        <a href=""><i class="fas fa-briefcase"></i></a>
+      </div>
+    </div>
+    <div class="airpods">
+      <a href=""><%= image_tag "airpods.jpg" %></a>
+      <div class="text-airpod">
+        <a href=""><h1>AirPods</h1>
+          <p>avec charge sans fil</p>
+        </a>
+        <div class="bounce">
+          <a href="">Regarder le film <i class="far fa-arrow-alt-circle-right"></i></a>
+          <a href=""style="margin-left:20px;">Acheter <i class="fas fa-chevron-right"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="iphone-xr">
+      <div class="xr-img">
+        <a href=""><%= image_tag "xr.png" %></a>
+      </div>
+      <div class="text-xr">
+        <a href="">Un design tout écran. La meilleure autonomie jamais vue sur un iPhone.<br>
+        Des performances ultra-rapides. Et des photos de qualité studio.</a>
+      </div>
+      <div class="link-xr">
+        <a href="">En savoir plus <i class="fas fa-chevron-right"></i></a>
+        <a href=""style="margin-left:20px;">Acheter <i class="fas fa-chevron-right"></i></a>
+      </div>
+      <a href=""><%= image_tag "iphone-xr.jpg", style:"width: 50%;" %></a>
+    </div>
+    <div class="iphone-xrs">
+      <div class="xrs-img">
+        <a href=""><%= image_tag "xs.png" %></a>
+      </div>
+      <div class="text-xrs">
+        <a href="">Le plus grand écran Super Rétina jamais vu. Des<br> performances ultra-rapides
+        grâce à la puce A12 Bionic.<br>L'authentification faciale la plus sûre avec Face ID.
+      <br>Et un double apparareil photo d'avant-garde avec<br> Contrôle de la profondeur.</a>
+      </div>
+      <div class="link-xrs">
+        <a href="">En savoir plus <i class="fas fa-chevron-right"></i></a>
+        <a href=""style="margin-left:20px;">Acheter <i class="fas fa-chevron-right"></i></a>
+      </div>
+      <a href=""><%= image_tag "iphone-xrs.jpg", style:"width: 60% ;margin-top:30px; " %></a>
+    </div>
+    <div class="grid-serie">
+      <div class="trade">
+        <a href=""><h1>L'iPhone Xr<br>à partir de 639€</h1>
+        <p>Il vous suffit de faire reprendre<br>votre iPhone actuel en ligne ou<br>
+        dans un Apple Store*.</p></a>
+        <div class="link-trade">
+          <a href="">En savoir plus <i class="fas fa-chevron-right"></i></a>
+          <a href=""style="margin-left:20px;">Acheter <i class="fas fa-chevron-right"></i></a>
+          <a href=""><%= image_tag "apple-iphone-xr.jpg",style:"width :70%; margin-top:30px;"%></a>
+        </div>
+      </div>
+      <div class="watch">
+        <a href=""><%= image_tag "logo-watch.png" %>
+        <p>Plus de puissance. Plus de couleurs. </a>
+        <div class="link-watch">
+          <a href="">En savoir plus <i class="fas fa-chevron-right"></i></a>
+          <a href=""style="margin-left:20px;">Acheter <i class="fas fa-chevron-right"></i></a>
+          <a href=""><%= image_tag "applewatch.jpg",style:"width :100%;"%></a>
+        </div>
+      </div>
+      <div class="back-to-school">
+        <a href=""><p>Un Mac ou un iPad dans <br> votre sac de cours,un<br>Beat sur vos oreilles </a>
+        <div class="link-back">
+          <a href=""style="margin-left:20px;">Acheter <i class="fas fa-chevron-right"></i></a>
+          <a href=""><%= image_tag "macbook-air-ipad-bts.png",style:"width :100%;margin-top: 25px; margin-left:40px;"%></a>
+        </div>
+      </div>
+      <div class="mac">
+        <a href=""><h1>MacBook Pro</h1>
+        <p>Plus de puissance. Plus de couleurs.<br>PLus pro. </a>
+        <div class="link-mac">
+          <a href="">En savoir plus <i class="fas fa-chevron-right"></i></a>
+          <a href=""style="margin-left:20px;">Acheter <i class="fas fa-chevron-right"></i></a>
+          <a href=""><%= image_tag "macblack.png",style:"width :80%;margin-top:-20px;"%></a>
+        </div>
+      </div>
+      <div class="mac-air">
+        <a href=""><h1>MacBook Air</h1>
+        <p>La légèreté revient en force.</a>
+        <div class="link-mac-air">
+          <a href="">En savoir plus <i class="fas fa-chevron-right"></i></a>
+          <a href=""style="margin-left:20px;">Acheter <i class="fas fa-chevron-right"></i></a>
+          <a href=""><%= image_tag "og.png",style:"width :150%;margin-left:-120px;"%></a>
+        </div>
+      </div>
+      <div class="ipad">
+        <a href=""><h1>iPad Pro</h1>
+        <p>Tout nouveau. Tout écran. Tout puissant. </a>
+        <div class="link-ipad">
+          <a href="">En savoir plus <i class="fas fa-chevron-right"></i></a>
+          <a href=""style="margin-left:20px;">Acheter <i class="fas fa-chevron-right"></i></a>
+          <a href=""><%= image_tag "ipad.jpg",style:"width :100%"%></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="condition">
+        <p>* Prix iPhone XR après reprise d’un iPhone 7 Plus 32Go. Autres valeurs
+          de crédit de reprise disponibles sous réserve de l’achat d’un nouvel iPhone
+          (soumis à des conditions de<br> disponibilité et à certaines limites). La valeur de
+          reprise varie selon l’état, l’année et la configuration de l’appareil retourné,
+          et selon que l’échange est effectué en ligne ou en<br> magasin. Offre valable pour
+          les personnes de plus de 18 ans. Des conditions complémentaires d’Apple ou des
+          partenaires de reprise d’Apple peuvent s’appliquer.</p>
+          <div class="line"></div>
+      </div>
+      <div class="end">
+        <div class="info">
+          <p>S'informer et acheter</p>
+          <li><a href="">Mac</a></li>
+          <li><a href="">iPad</a></li>
+          <li><a href="">iPhone</a></li>
+          <li><a href="">Watch</a></li>
+          <li><a href="">TV</a></li>
+          <li><a href="">Music</a></li>
+          <li><a href="">iTunes</a></li>
+          <li><a href="">HomePod</a></li>
+          <li><a href="">iPod touch</a></li>
+          <li><a href="">Accessoires</a></li>
+          <li><a href="">Cartes Cadeaux</a></li>
+        </div>
+        <div class="store">
+          <p>Apple Store</p>
+          <li><a href="">Trouver un Apple Store</a></li>
+          <li><a href="">Genuis Bar</a></li>
+          <li><a href="">Today at Apple</a></li>
+          <li><a href="">Stage d'été Apple</a></li>
+          <li><a href="">App Apple Store</a></li>
+          <li><a href="">Produits reconditionnés et<br>soldés</a></li>
+          <li><a href="">Financement</a></li>
+          <li><a href="">HomePod</a></li>
+          <li><a href="">Apple Trade In</a></li>
+          <li><a href="">État de votre commande</a></li>
+          <li><a href="">Aide à l'achat</a></li>
+        </div>
+        <div class="education">
+          <p>Pour l’Éducation</p>
+          <li><a href="">Aple et l’Éducation</a></li>
+          <li><a href="">Acheter pour l'université</a></li>
+          <div class="entreprise">
+            <p>Pour les entreprises</p>
+            <li><a href="">Aple et les entreprises</a></li>
+            <li><a href="">Acheter pour votre entreprise</a></li>
+          </div>
+          <div class="sante">
+            <p>Pour la santé</p>
+            <li><a href="">Aple dans le secteur de la <br>santé</a></li>
+            <li><a href="">La santé sur Apple Watch</a></li>
+          </div>
+        </div>
+        <div class="compte">
+          <p>Compte</p>
+          <li><a href="">Gérer votre indentifiant Apple</a></li>
+          <li><a href="">Compte Apple Store</a></li>
+          <li><a href="">iCloud.com</a></li>
+          <div class="valeur">
+            <p>Valeurs d'Apple</p>
+            <li><a href="">Accessibilité</a></li>
+            <li><a href="">Environnement</a></li>
+            <li><a href="">Confidentialité</a></li>
+            <li><a href="">Responsabilité des<br>fournisseurs</a></li>
+          </div>
+        </div>
+        <div class="apropos">
+          <p>À propos d’Apple</p>
+          <li><a href="">Newsroom</a></li>
+          <li><a href="">Direction d'Apple</a></li>
+          <li><a href="">Travailler chez Apple</a></li>
+          <li><a href="">Garantie</a></li>
+          <li><a href="">Investisseurs</a></li>
+          <li><a href="">Événements</a></li>
+          <li><a href="">Création d'emplois en Europe</a></li>
+          <li><a href="">Contacter Apple</a></li>
+        </div>
+      </div>
+      <div class="text-end">
+        <h3>Vous pouvez aussi faire vos achats <a href="">dans un Apple Store,</a> par téléphone au 0800 046 046 ou <a href="">chez un revendeur agréé</a>.</h3>
+        <div class="line2"></div>
+      </div>
+      <div class="copy">
+        <div class="text-copy">
+          <p>Copyright © 2019 Apple Inc. Tous droits réservés.</p>
+          <div class="link-copy">
+            <%= image_tag "france.svg",style:"width:8%" %>
+            <a href="">France</a>
+          </div>
+        </div>
+      </div>
+      <div class="privacy">
+        <li><a href="">Engagement de confidentialité</a></li>
+        <li>|</li>
+        <li><a href="">Utilisation des cookies</a></li>
+        <li>|</li>
+        <li><a href="">Conditions d'utilisation</a></li>
+        <li>|</li>
+        <li><a href="">Ventes et remboursements</a></li>
+        <li>|</li>
+        <li><a href="">Mentions légales</a></li>
+        <li>|</li>
+        <li><a href="">Plan du site</a></li>
+      </div>
+    </div>
     <%= yield %>
   </body>
 </html>
